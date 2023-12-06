@@ -1,0 +1,33 @@
+{
+  "title": "Oracle Name",
+  "description": "Dimmi il tuo nome e ti dir\u00f2 chi sei.\n\nSito: [http://oracle-name.challs.cyberhighschools.it](http://oracle-name.challs.cyberhighschools.it)",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 3,
+  "flags": [
+    "^flag\\{Y0uR_f1rs7_Ch0s3n_Pl4in73x7_4ttAcK\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://oracle-name.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

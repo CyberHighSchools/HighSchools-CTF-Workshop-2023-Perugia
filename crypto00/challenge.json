@@ -1,0 +1,23 @@
+{
+  "title": "Haxxor Encoding",
+  "description": "E quindi vuoi diventare un HACKER? Vediamo se riesci a decifrare il messaggio segreto:\n\n`666c61677b4833785f336e633064316e675f31735f345f7233616c5f483458583072737d`",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 0,
+  "flags": [
+    "^flag\\{H3x_3nc0d1ng_1s_4_r3al_H4XX0rs\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

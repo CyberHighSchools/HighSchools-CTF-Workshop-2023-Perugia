@@ -1,0 +1,30 @@
+{
+  "title": "Open top container",
+  "description": "Per via delle stringenti regole sul trasporto marino delle merci, abbiamo a disposizione moltissime informazioni che possiamo ricavare anche solo da un'immagine.\n\nIn quale stato si trova il container in questa foto?\n\n_Il formato della flag \u00e8 del tipo `flag{Nome_Dello_Stato}`._",
+  "authors": [
+    "Riccardo Pesciarelli <@RoboRich00A16>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 3,
+  "flags": [
+    "^flag\\{Singapore\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "container_open_top.jpeg",
+      "type": "upload",
+      "path": "./attachments/container_open_top.jpeg",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

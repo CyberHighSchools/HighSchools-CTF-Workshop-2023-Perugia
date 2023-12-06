@@ -1,0 +1,1 @@
+Se non siete riusciti a trovare il luogo e l'evento dalla sfida precedente, in questa sfida si parla dell'incidente avvenuto durante la _Rose Festival's Grand Floral Parade_ a Portland in Oregon, Stati Uniti.

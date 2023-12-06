@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}SEEDed L0ttery{% endblock %}
+
+{% block content %}
+    <div class="container text-center mt-4">
+        <h1>SEEDed L0ttery</h1>
+        <p class="lead mt-3">Benvenuto alla lotteria!</p>
+        <p class="mt-12">Per partecipare scegli un numero qualsiasi</p>
+        <div class="form-group">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto mb-3">
+                    <input type="number" class="form-control" id="lottery-number" placeholder="Numero">
+                </div>
+            </div>
+        <button type="button" class="btn btn-primary" onclick="playNumber()">Submit</button>
+        <div class="row justify-content-md-center">
+                <div id="liveAlertPlaceholder"></div>
+        </div>
+    </div>
+{% endblock %}

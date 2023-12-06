@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web06:
+    build: .
+    environment:
+      - "FLAG=flag{SSRF_this_CRLF_that_vulns_everywhere}"
+    ports:
+      - "80:80"
+    privileged: false
+    restart: unless-stopped

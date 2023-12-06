@@ -1,0 +1,40 @@
+{
+  "title": "the_backend",
+  "description": "Il server utilizza un'infrastruttura molto standard: un frontend che a sua volta chiama un backend, che chiama un backend, che chiama un backend, che chiama un backend, che chiama un backend... Ok, forse mi sono perso.\n\nIl punto \u00e8 che lo sviluppatore va molto fiero di non aver utilizzato librerie esterne, ma di aver scritto tutto da solo.\n\nMi sembrava sospetto quindi gli ho chiesto di fornirmi un'interfaccia grafica per inserire il mio token, altrimenti andare a modificare i cookie ogni volta sarebbe stato troppo scomodo.\n\nUsala anche tu se vuoi e dimmi cosa ne pensi.\n\nSito: [http://the-backend.challs.cyberhighschools.it](http://the-backend.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 6,
+  "flags": [
+    "^flag\\{SSRF_this_CRLF_that_vulns_everywhere\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "index.php",
+      "type": "upload",
+      "path": "./attachments/index.php",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://the-backend.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

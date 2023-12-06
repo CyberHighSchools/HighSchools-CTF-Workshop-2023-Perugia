@@ -1,0 +1,36 @@
+{
+  "title": "Irresponsible",
+  "description": "Non riuscirai mai a ricomporre i frammenti della flag!",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 5,
+  "flags": [
+    "^flag\\{fr4gm3nt3dk3ys_3v3rywh3r3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "Dmarc_Name_System.pcapng",
+      "type": "upload",
+      "path": "./attachments/Dmarc_Name_System.pcapng",
+      "dynamic": false
+    },
+    {
+      "name": "irresponsible.pcapng",
+      "type": "upload",
+      "path": "./attachments/irresponsible.pcapng",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

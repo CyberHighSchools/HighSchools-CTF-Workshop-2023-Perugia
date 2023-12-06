@@ -1,0 +1,29 @@
+{
+  "title": "Pedaggio troppo alto!",
+  "description": "Un investigatore privato sta seguendo un tale Lamberto Capellini. Deve monitorarne gli spostamenti, per cui ha piazzato un GPS sul suo SUV di grandi dimensioni. \n\nQuando questa mattina sono cominciati gli spostamenti \u00e8 stato visto entrare in autostrada ad Arezzo, ma poi la batteria del GPS si \u00e8 scaricata, cos\u00ec l'investigatore ne ha perso le tracce e chiede il vostro aiuto: siete in grado di indicargli in quale citt\u00e0 Lamberto \u00e8 uscito? \n\n_Il formato della flag \u00e8 del tipo `flag{Nome_Della_Citt\u00e0}`._",
+  "authors": [
+    "Riccardo Pesciarelli <@RoboRich00A16>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 6,
+  "flags": [
+    "^flag\\{Frosinone\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 5
+    }
+  }
+}

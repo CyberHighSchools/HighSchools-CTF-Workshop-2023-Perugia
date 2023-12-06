@@ -1,0 +1,30 @@
+{
+  "title": "DMARC Naming System",
+  "description": "Sono cos\u00ec importante in termini di sicurezza che hanno dedicato un posticino anche per me!",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 4,
+  "flags": [
+    "^flag\\{txt_rec0rd_us3cases\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "Dmarc_Name_System.pcapng",
+      "type": "upload",
+      "path": "./attachments/Dmarc_Name_System.pcapng",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

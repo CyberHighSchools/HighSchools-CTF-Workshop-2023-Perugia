@@ -1,0 +1,33 @@
+{
+  "title": "trova_le_soluzioni",
+  "description": "Il professore ha caricato le soluzioni della verifica di domani nel proprio sito web.\n\nRiuscirai a trovarle?\n\nSito: [http://trova-le-soluzioni.challs.cyberhighschools.it](http://trova-le-soluzioni.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 1,
+  "flags": [
+    "^flag\\{Non_ho_voglia_di_studiar3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://trova-le-soluzioni.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

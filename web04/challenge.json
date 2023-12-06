@@ -1,0 +1,33 @@
+{
+  "title": "calcolatrice",
+  "description": "Una calcolatrice. Semplicemente una calcolatrice. In realt\u00e0 forse non \u00e8 troppo semplice visto che \u00e8 perfetta, ma lo sviluppatore si \u00e8 vantato di averla scritta in 5 minuti.\n\nSito: [http://calcolatrice.challs.cyberhighschools.it](http://calcolatrice.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 4,
+  "flags": [
+    "^flag\\{R3mote_c0de_3x3cution_vuln3r4b1l1ty_1s_4lw4ys_d4ng3r0us\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://calcolatrice.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  web05:
+    build: .
+    environment:
+      - "FLAG=flag{A_R4ce_c0nd1t10n_in_a_trading_system!?}"
+      - "MYSQL_HOST=web05-db"
+      - "MYSQL_DATABASE=trading"
+      - "MYSQL_USER=trading"
+      - "MYSQL_PASSWORD=mha-qAx0,NXyijwzr.B3e"
+    ports:
+      - "80:80"
+    volumes:
+      - ./app/public/index.php:/usr/local/apache2/htdocs/public/index.php
+    privileged: false
+    restart: unless-stopped
+
+  web05-db:
+    image: mysql:8.0.35
+    privileged: false
+    restart: unless-stopped
+    environment:
+      - "MYSQL_ROOT_PASSWORD=XK/p27+nHLRYnpff9KMXf7"
+      - "MYSQL_DATABASE=trading"
+      - "MYSQL_USER=trading"
+      - "MYSQL_PASSWORD=mha-qAx0,NXyijwzr.B3e"
+    volumes:
+      - ./db/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro

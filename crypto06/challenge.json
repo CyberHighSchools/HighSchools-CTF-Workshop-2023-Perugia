@@ -1,0 +1,33 @@
+{
+  "title": "Diffie Hellman Key Exchange",
+  "description": "In questa challenge dovrai effettuare uno scambio di chiavi con il protocollo Diffie-Hellman.\n\nLa flag ti verr\u00e0 inviata cifrata con la chiave che \u00e8 stata scambiata.\n\nSito: [http://dhke.challs.cyberhighschools.it](http://dhke.challs.cyberhighschools.it)",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 6,
+  "flags": [
+    "^flag\\{D1ff13_H3llm4nn_K3y_3xch4ng3_4lg0r1thm\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://dhke.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

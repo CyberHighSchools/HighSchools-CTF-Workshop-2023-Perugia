@@ -1,0 +1,13 @@
+version: "3"
+services:
+  crypto06:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - FLAG=flag{D1ff13_H3llm4nn_K3y_3xch4ng3_4lg0r1thm}
+      - FLASK_ENV=production
+      - FLASK_APP=app
+      - GUNICORN_WORKERS # default: 4
+    privileged: false
+    restart: unless-stopped

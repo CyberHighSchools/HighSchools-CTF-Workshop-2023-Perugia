@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  web03:
+    build: .
+    environment:
+      - "FLAG=flag{SQL_inj3ction_se3ms_4m4z1ng}"
+      - "MYSQL_HOST=web03-db"
+      - "MYSQL_DATABASE=soluzioni"
+      - "MYSQL_USER=soluzioni"
+      - "MYSQL_PASSWORD=msZ,myzAaSid+LCGx70r"
+    ports:
+      - "80:80"
+    privileged: false
+    restart: unless-stopped
+
+  web03-db:
+    image: mysql:8.0.35
+    restart: unless-stopped
+    environment:
+      - "MYSQL_ROOT_PASSWORD=1IYaQX-CO8ggaZ^o8GpL."
+      - "MYSQL_DATABASE=soluzioni"
+      - "MYSQL_USER=soluzioni"
+      - "MYSQL_PASSWORD=msZ,myzAaSid+LCGx70r"
+    volumes:
+      - ./db/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro

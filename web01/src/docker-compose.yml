@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web01:
+    build: .
+    environment:
+      - "FLAG=flag{Non_ho_voglia_di_studiar3}"
+    ports:
+      - "80:80"
+    privileged: false
+    restart: unless-stopped

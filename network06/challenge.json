@@ -1,0 +1,30 @@
+{
+  "title": "Corrupted File System",
+  "description": "Volevo caricare un'immagine nella presentazione, ma non mi aspettavo questo risultato...",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 6,
+  "flags": [
+    "^flag\\{controv3rs1al_f1les\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "Corrupted File System.pcapng",
+      "type": "upload",
+      "path": "./attachments/Corrupted File System.pcapng",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

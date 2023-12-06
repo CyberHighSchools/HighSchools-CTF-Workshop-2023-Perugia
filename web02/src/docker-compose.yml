@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web02:
+    build: .
+    environment:
+      - "FLAG=flag{i0_n0n_stud13r0_m41!}"
+    ports:
+      - "80:80"
+    privileged: false
+    restart: unless-stopped

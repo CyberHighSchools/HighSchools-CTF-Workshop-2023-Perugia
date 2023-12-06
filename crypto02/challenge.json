@@ -1,0 +1,33 @@
+{
+  "title": "SEEDed L0ttery",
+  "description": "Ho imparato dai miei errori e questa volta non avrai la flag cos\u00ec facilmente! \ud83d\ude08\n\nSono talmente sicuro, che ti do accesso al codice sorgente del mio programma.\n\nPer risolvere questa challenge ti servir\u00e0 un interprete Python, se non ce l'hai installato, puoi usarne uno [online](https://www.online-python.com/).\n\nSito: [http://seeded-lottery.challs.cyberhighschools.it](http://seeded-lottery.challs.cyberhighschools.it)",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 2,
+  "flags": [
+    "^flag\\{S3ed_1s_N0t_5o_R4nd0m_4f7eR_A11!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://seeded-lottery.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "trading",
+  "description": "In questo sito di trading puoi comprare e vendere PGCoin, la criptovaluta che sta rivoluzionando il mondo.\n\nIl sito \u00e8 ancora in beta, ma \u00e8 gi\u00e0 possibile effettuare transazioni di prova.\n\nSito: [http://trading.challs.cyberhighschools.it](http://trading.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 5,
+  "flags": [
+    "^flag\\{A_R4ce_c0nd1t10n_in_a_trading_system!\\?\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "utils.php",
+      "type": "upload",
+      "path": "./attachments/utils.php",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://trading.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

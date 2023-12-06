@@ -1,0 +1,30 @@
+{
+  "title": "Sicurezza alla parata",
+  "description": "Il comandante delle forze dell\u2019ordine locali ti ha chiesto di stilare il rapporto sull\u2019incidente avvenuto durante la parata cittadina.\n\nTi chiede innanzitutto di individuare il numero dell'uscita autostradale che ha preso il conducente prima di irrompere nella sfilata. L'unica informazione che ti fornisce \u00e8 questa foto.\n\nTi chiede innanzitutto di individuare l'uscita dell'autostrada che ha usato il conducente per irrompere nella sfilata. L'unica informazione che ti fornisce \u00e8 questa foto.\n\n_Il formato della flag \u00e8 tutto maiuscolo e senza spazi._",
+  "authors": [
+    "Riccardo Pesciarelli <@RoboRich00A16>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 1,
+  "flags": [
+    "^flag\\{302A\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "reckless_driver.jpg",
+      "type": "upload",
+      "path": "./attachments/reckless_driver.jpg",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,30 @@
+{
+  "title": "A careless admin",
+  "description": "Dovrei essere riuscito ad intercettare la password dell'amministratore di sistema mentre accedeva al suo sito, puoi aiutarmi a trovarla?",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 1,
+  "flags": [
+    "^flag\\{th1s_ws_1s_fr4g1l3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "A careless admin.pcapng",
+      "type": "upload",
+      "path": "./attachments/A careless admin.pcapng",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

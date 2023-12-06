@@ -1,0 +1,30 @@
+{
+  "title": "Bautiful Content",
+  "description": "Sono finalmente riuscito a inserire questa bellissima foto!",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 2,
+  "flags": [
+    "^flag\\{d4t_d4mned_sm1l3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "beautiful_content.pcapng",
+      "type": "upload",
+      "path": "./attachments/beautiful_content.pcapng",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

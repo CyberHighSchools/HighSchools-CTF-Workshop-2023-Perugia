@@ -1,0 +1,33 @@
+{
+  "title": "ROTten L0ttery",
+  "description": "Ho inventato una lotteria speciale, tu dai i numeri io ti do la flag... forse! \ud83d\udc40\n\nSito: [http://rotten-lottery.challs.cyberhighschools.it](http://rotten-lottery.challs.cyberhighschools.it)",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 1,
+  "flags": [
+    "^flag\\{T0o_3a\\$y_f0r_Cyb3rCh3f\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://rotten-lottery.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

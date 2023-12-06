@@ -1,0 +1,13 @@
+version: "3"
+services:
+  crypto01:
+    build: .
+    ports:
+      - "8000:8000"
+    privileged: false
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{T0o_3a$$y_f0r_Cyb3rCh3f} # Il $ in più serve per renderlo come un carattere e non una variabile
+      - FLASK_ENV=production
+      - FLASK_APP=app
+      - GUNICORN_WORKERS # default: 4

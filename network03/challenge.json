@@ -1,0 +1,30 @@
+{
+  "title": "Least Significant Brushwork",
+  "description": "Un bello scatto dell'opera di Burri, ma potrei averci nascosto dentro un segreto :secret:",
+  "authors": [
+    "Emanuele Bosimini <@KaiserSource>"
+  ],
+  "tags": [
+    "forensics"
+  ],
+  "hiddenTags": [],
+  "order": 3,
+  "flags": [
+    "^flag\\{h1ding_1s_n0t_ciph3ring\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "the_big_black.png",
+      "type": "upload",
+      "path": "./attachments/the_big_black.png",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

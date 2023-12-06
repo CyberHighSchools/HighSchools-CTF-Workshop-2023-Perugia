@@ -1,0 +1,33 @@
+{
+  "title": "trova_le_soluzioni3",
+  "description": "Anche questa volta il professore scopre la vulnerabilit\u00e0 presente nel suo sito e decide dunque di modificarlo aggiungendo un database SQL in modo da gestire dinamicamente quali file visualizzare in base all'utente che accede al sito.\n\nSito: [http://trova-le-soluzioni-3.challs.cyberhighschools.it](http://trova-le-soluzioni-3.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 3,
+  "flags": [
+    "^flag\\{SQL_inj3ction_se3ms_4m4z1ng\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://trova-le-soluzioni-3.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

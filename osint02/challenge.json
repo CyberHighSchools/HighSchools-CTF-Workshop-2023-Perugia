@@ -1,0 +1,23 @@
+{
+  "title": "Pronto intervento",
+  "description": "Il comandante ti ha chiesto di includere nel rapporto anche il nome dell'agente che \u00e8 corso in moto all'inseguimento del conducente.\n\n_Il formato della flag \u00e8 del tipo `flag{Nome_Cognome}`._",
+  "authors": [
+    "Riccardo Pesciarelli <@RoboRich00A16>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 2,
+  "flags": [
+    "^flag\\{David_Baer\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

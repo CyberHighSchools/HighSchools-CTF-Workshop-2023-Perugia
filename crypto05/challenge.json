@@ -1,0 +1,33 @@
+{
+  "title": "Flipper equation",
+  "description": "Ho inventato un gioco divertente per imparare a risolvere le equazioni di primo grado.\n\nSito: [http://flipper-equation.challs.cyberhighschools.it](http://flipper-equation.challs.cyberhighschools.it)",
+  "authors": [
+    "Nalin Dhingra <@Lotus>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 5,
+  "flags": [
+    "^flag\\{s0_Y0u_4r3_4_b1t_fl1pp3R\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://flipper-equation.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

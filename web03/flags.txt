@@ -1,0 +1,1 @@
+flag{SQL_inj3ction_se3ms_4m4z1ng}

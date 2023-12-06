@@ -1,0 +1,23 @@
+{
+  "title": "Token trapelato",
+  "description": "Sei venuto a sapere che lo sviluppatore del bot di Telegram \"Volta il Dado Bot\" ha fatto trapelare per sbaglio il token utilizzato per autorizzare le interazioni con il suo bot.\n\nChi \u00e8 in possesso di questo codice pu\u00f2 controllare il bot. Lo sviluppatore per\u00f2 si \u00e8 accorto subito e crede di aver riparato al danno. Rintraccia il token.",
+  "authors": [
+    "Riccardo Pesciarelli <@RoboRich00A16>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 5,
+  "flags": [
+    "^flag\\{1937213116:AAFRzNy_Rj4BianiJvVN7Gjt5kdKcS6l33s\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

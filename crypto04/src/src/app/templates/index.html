@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}XOR Frequency Analysis{% endblock %}
+
+{% block content %}
+    <div class="container text-center my-5">
+        <p>Riesci a indovinare che libro sto leggendo?</p>
+        <p>&Egrave in inglese ma non dovrebbe essere un problema per te</p>
+    </div>
+    <div class="container my-4 text-center">
+        <div class="my-4">
+            <a href="#" id="downloadLink" download="ciphertext.enc">
+                <button class="btn btn-primary">Scarica il messaggio cifrato</button>
+            </a>
+        </div>
+        <p>
+            {% for i in range(0, ciphertext|length, 2) %}
+                {{ ciphertext[i:i+2] }}{% if not loop.last %}&nbsp;{% endif %}
+            {% endfor %}
+        </p>
+    </div>
+    <script>
+        // Convert hex string to Uint8Array
+        function hexStringToUint8Array(hexString) {
+            const bytes = [];
+            for (let i = 0; i < hexString.length; i += 2) {
+                bytes.push(parseInt(hexString.substr(i, 2), 16));
+            }
+            return new Uint8Array(bytes);
+        }
+
+        // Handle download button click
+        document.getElementById('downloadLink').addEventListener('click', function() {
+            const ciphertextHex = '{{ ciphertext }}';
+            const uint8Array = hexStringToUint8Array(ciphertextHex);
+            const blob = new Blob([uint8Array], { type: 'application/octet-stream' });
+
+            // Create a data URL for the Blob
+            const url = URL.createObjectURL(blob);
+
+            // Set the download link href
+            this.href = url;
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Source code{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <pre>
+            <code class="language-py">{{source}}</code>
+        </pre>
+    </div>
+{% endblock %}

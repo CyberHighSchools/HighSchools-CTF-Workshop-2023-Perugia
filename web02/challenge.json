@@ -1,0 +1,33 @@
+{
+  "title": "trova_le_soluzioni2",
+  "description": "Il professore, scoprendo le vulnerabilit\u00e0 presenti nel suo sito, decide di modificarlo aggiungendo un file PHP che permetta di caricare dinamicamente i file da visualizzare.\n\nRiuscirai ad evitare di studiare anche questa volta?\n\nSito: [http://trova-le-soluzioni-2.challs.cyberhighschools.it](http://trova-le-soluzioni-2.challs.cyberhighschools.it)",
+  "authors": [
+    "Federico Sabbatini <@FedericoHeichou>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 2,
+  "flags": [
+    "^flag\\{i0_n0n_stud13r0_m41!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://trova-le-soluzioni-2.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}
